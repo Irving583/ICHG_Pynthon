@@ -1,0 +1,10 @@
+import math
+
+while True:
+        numero = float(input("Introduce un número positivo para calcular su raíz cuadrada: "))
+        if numero < 0:
+            print("Por favor, introduce un número positivo.")
+            continue
+        raiz_cuadrada = math.sqrt(numero)
+        print(f"La raíz cuadrada de {numero} es {raiz_cuadrada}")
+        break

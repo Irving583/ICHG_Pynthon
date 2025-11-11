@@ -1,0 +1,9 @@
+""" Dibuja un ordinograma de un programa que lea 100 números no nulos y luego muestre un 
+mensaje de si ha leído número negativo o no. """
+
+n_negativo = False
+for _ in range(100):
+    numero = float(input("Introduce un número no nulo: "))
+    if numero < 0:
+        n_negativo = True  
+        

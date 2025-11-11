@@ -1,0 +1,16 @@
+"""Dibuja un ordinograma de un programa que lea una secuencia de números no nulos hasta 
+que se introduzca un 0, y luego muestre si ha leído algún número negativo, cuantos positivos y 
+cuantos negativos"""
+
+n_positivos = 0
+n_negativos = 0
+n_negativo = False
+while True:
+    numero = float(input("Introduce un número (0 para terminar): "))
+    if numero == 0:
+        break
+    if numero > 0:
+        n_positivos += 1
+    else:
+        n_negativos += 1
+        n_negativo = True

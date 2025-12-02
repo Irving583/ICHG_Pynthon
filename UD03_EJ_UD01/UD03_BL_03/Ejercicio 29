@@ -1,0 +1,23 @@
+"""Un programa donde el usuario “piensa” un número del 1 al 100 
+y el ordenador intenta adivinarlo. Es decir, el ordenador irá proponiendo números una y otra 
+vez hasta adivinarlo (El usuario deberá indicarlo al ordenador si es mayor o menor o igual al 
+número pensado). """
+
+print("Piensa un número entre 1 y 100 y yo intentaré adivinarlo.")
+bajo = 1
+alto = 100      
+intentos = 0
+while True:
+    intentos += 1
+    num = (bajo + alto) // 2
+    respuesta = input(f"¿Es {num}? (mayor/menor/igual): ").lower()
+    if respuesta == "igual":
+        print(f"¡He adivinado tu número {num} en {intentos} intentos!")
+        break
+    elif respuesta == "mayor":
+        bajo = num + 1
+    elif respuesta == "menor":
+        alto = num - 1
+    else:
+        print("Eliga una de las opciones.")
+            
